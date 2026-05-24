@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Page title</title>
+<meta name="description" content="Web tutorials">
+    <style type="text/css">
+
+form {
+    width: 40%;
+    margin: auto;
+  border: none;
+    background-color: white;
+    
+}
+input[type=text], input[type=password] {
+    margin: auto;
+    width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #003049;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #003049;
+  color: white;
+  padding: 14px 20px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+    text-size: 50px;
+}
+
+button:hover {
+  background-color: #C1121F;
+    text-size: 55px;
+}
+
+.container {
+  padding: 16px;
+    margin: auto;
+    text-align: center;
+    text-size: 40px;
+}
+
+
+        </style>
+</head>
+    
+    <body style="background-color: #003049">
+        <header style="text-allign: center">
+            <h2 style="text-align: center; color: white;">SIGN IN</h2>
+        </header>
+        <form action="action_page.php" method="post">
+
+  <div class="container">
+    <label for="uname"><b>Email</b></label>
+      <br>
+    <input type="text" placeholder="Enter Email" name="uname" required>
+      <br>
+
+    <label for="psw"><b>Password</b></label>
+      <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+
+    <button type="submit"><b>SIGN IN</b></button>
+  </div>
+
+
+</form>
+</body>
