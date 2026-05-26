@@ -71,22 +71,102 @@
             
             display: block;
         }
-        .container {
-            display: grid; 
-            justify-content: center; 
-            flex-direction: row; 
-            gap: 20px;
-            flex-wrap: wrap;
-            place-items: end;
-           
-        }
-     .p-imtext {
-         grid-column: 1 / 2;
-     }
         
-       .h-imtext {
-           grid-column: 1 / 2;
-       } 
+        .grid-row {
+            display: grid; 
+            grid-template-columns: repeat(4, 300px); 
+            justify-content: center; 
+            gap: 20px;
+        }
+
+        /* 2. Anchor the absolute text inside this wrapper */
+        .image-card {
+            position: relative; 
+            width: 300px;
+            height: 800px;
+            overflow: hidden;
+            border-radius: 4px; /* Optional clean corners */
+        }
+
+        /* Prevent images from breaking container boundaries */
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps images crisp without stretching */
+            display: block;
+        }
+
+        /* 3. Position the text directly over the image card */
+        .overlay-text {
+            position: absolute;
+            bottom: 0;         /* Places text box at the bottom of the card */
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            
+            /* Optional: Adds a dark tint behind text for great readability */
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); 
+        }
+
+        .overlay-text h3 {
+            margin: 0 0 8px 0;
+            font-size: 24px;
+            color: #C1121F; /* Theme accent color */
+        }
+
+        .overlay-text p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-row">
+        <!-- Card 1 -->
+        <div class="image-card">
+            <img src="m1.jpg" alt="Home">
+            <div class="overlay-text">
+                <h3><b>Latest Updates</b></h3>
+                <p>All the latest news on the main pop diva!</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="image-card">
+            <img src="m2.jpg" alt="Biography">
+            <div class="overlay-text">
+                <h3><b>Biography</b></h3>
+                <p>Explore the life story of the Queen of Pop.</p>
+            </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="image-card">
+            <img src="m3.jpeg" alt="Music">
+            <div class="overlay-text">
+                <h3><b>Music</b></h3>
+                <p>Discover iconic albums and chart-topping hits.</p>
+            </div>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="image-card">
+            <img src="m4.jpg" alt="Performances">
+            <div class="overlay-text">
+                <h3><b>Performances</b></h3>
+                <p>Relive legendary live tours and stage shows.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
     
        
     </style>
