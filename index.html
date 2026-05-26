@@ -1,103 +1,141 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-    
 <head>
-<title>Page title</title>
-<meta name="description" content="Web tutorials">
-<style type="text/css">
-    *{
-        text-decoration: none;
-    }
-
-    }
-    .navbar{
-        background-color: #003049; font-family: Garamond; padding-left: 30px; padding-right: 30px; width: 50px;
-    }
-    .navdiv{
-        display: flex; flex-direction: row; align-items: center; justify-content: space-evenly; top: 20px; bottom: 20px;
-    }
-    .navel a{
-        font-family: Garmond; font-size: 21px; color: white;
-    }
-    .navel a:hover{
-        color:#C1121F; font-size: 25px;
-    }
-    .button1{
-        background-color: white; margin-left: 10px; padding: 10px; width: 50 px; border: 0px;
-    }
-    .button1 a{
-        font-family: Garamond; font-weight: bold; color: #003049; font-size: 21px;
-    }
-    .button1:hover{
-        background-color: #C1121F; color: white; font size: 25px; width: 54 px; padding: 14px; font-size: 25px;
-    }
-        .button1 a:hover{
-        color: white; font size: 25px;
-    }
-
-    #header-image-menu img{
-    width: 100%;
-    height: 40%;
-    margin: none;
-    padding: none;
-}
-    .container{
-        display: flex; justify-content: center; flex-direction: row; gap: 20px;
-        
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <meta name="description" content="Web tutorials">
+    <style type="text/css">
+        * {
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        header {
+            position: relative;
+            background-color: #003049;
+        }
+        .navbar {
+            background-color: #003049; 
+            font-family: Garamond, serif; 
+            padding: 0 30px; 
+            width: 100%;
+        }
+        .navdiv {
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: space-evenly; 
+            padding: 20px 0;
+        }
+        .navel a {
+            font-family: Garamond, serif; 
+            font-size: 21px; 
+            color: white;
+        }
+        .navel a:hover {
+            color: #C1121F; 
+            font-size: 25px;
+        }
+        .button1 {
+            background-color: white; 
+            margin-left: 10px; 
+            padding: 10px; 
+            width: 100px; 
+            border: 0;
+            cursor: pointer;
+        }
+        .button1 a {
+            font-family: Garamond, serif; 
+            font-weight: bold; 
+            color: #003049; 
+            font-size: 21px;
+        }
+        .button1:hover {
+            background-color: #C1121F; 
+            color: white; 
+            padding: 14px; 
+            width: 110px;
+        }
+        .button1 a:hover {
+            color: white;
+        }
+        #header-image-menu img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            display: block;
+        }
+        .container {
+            display: flex; 
+            justify-content: center; 
+            flex-direction: row; 
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .custom-text {
+            display: block;
+            color: yellow; 
+            background-color: red;
+            font-style: italic;
+        }
+        .footer-text {
+            display: block;
+            border: 5px dotted red; 
+            text-align: right;
+        }
+    </style>
 </head>
-
 <body>
     
-<header style="background-color: #003049;">
-<nav class="navbar">
-    <div class="navdiv">
-        <div class="logo"><a title="Main page" href="#"><img src="M_logo.svg" 
-        alt="logo" style="width:55px;height:55px;"></a></div>
-        <div class="navel"><a href="index2.html">BIOGRAPHY</a></div>
-        <div class="navel"><a href="index2.html">MUSIC</a></div>
-        <div class="navel"><a href="index2.html">PERFORMANCES</a></div>
-         <div class="navel"><a onclick="window.open('https://www.instagram.com/newrt_45/');"><img src="ins.svg"  
-             style="width:25px;height:25px; padding-left: 5px; padding-right: 0px;"></a></div>
-        <button class="button1"><a href="signin.html">SIGN IN</a></button>
+<header>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a title="Main page" href="#">
+                    <img src="M_logo.svg" alt="logo" style="width:55px;height:55px;">
+                </a>
+            </div>
+            <div class="navel"><a href="index2.html">BIOGRAPHY</a></div>
+            <div class="navel"><a href="index2.html">MUSIC</a></div>
+            <div class="navel"><a href="index2.html">PERFORMANCES</a></div>
+            <div class="navel">
+                <a onclick="window.open('https://www.instagram.com/newrt_45/');" style="cursor: pointer;">
+                    <img src="ins.svg" alt="Instagram" style="width:25px;height:25px; padding-left: 5px;">
+                </a>
+            </div>
+            <button class="button1" onclick="location.href='signin.html'"><a href="signin.html">SIGN IN</a></button>
+        </div>
+    </nav>
+    <div id="header-image-menu">
+        <img src="m_header.jpeg" alt="Madonna Header">
     </div>
-</nav>
-     <div id="header-image-menu">
-    <img src="m_header.jpeg">
-     </div>
     
-<h1 style="position: absolute; top: 30%;
-    left: 60%; transform: translate(-30%, -30%); color:#C1121F; font-size: 110px; text-align:center"><b>MADONNA</b></h1>
-    <h2 style="position: absolute; top: 60%;
-    left: 60%; transform: translate(-30%, -30%); color:#C1121F; font-size: 70px; text-align:center">Page dedicated to the Queen of Pop</h2>
+    <h1 style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); color:#C1121F; font-size: 80px; text-align:center; margin: 0;"><b>MADONNA</b></h1>
+    <h2 style="position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); color:#C1121F; font-size: 40px; text-align:center; margin: 0; width: 80%;">Page dedicated to the Queen of Pop</h2>
 </header>
-<div style="padding-left: 5%; padding-right: 5%; background-color: #003049; font-family: Garamond;">
-<h1 style="color: #C1121F; text-align:center;">Get to know more about the most influencial female pop singer ever</h1>
+
+<div style="padding: 20px 5%; background-color: #003049; font-family: Garamond, serif; color: white;">
+    <h1 style="color: #C1121F; text-align:center;">Get to know more about the most influential female pop singer ever</h1>
     <br>
     <div class="container">
-<div><img src="m1.jpg" width="300px" height="800px" alt="Home"></div>
-<div><img src="m2.jpg" width="300px" height="800px" alt="Biography"></div>
-  <div><img src="m3.jpeg" width="300px" height="800px" alt="Music"></div>
-    <div><img src="m4.jpg" width="300px" height="800px" alt="Performances"></div>
+        <div><img src="m1.jpg" width="300" height="800" alt="Home"></div>
+        <div><img src="m2.jpg" width="300" height="800" alt="Biography"></div>
+        <div><img src="m3.jpeg" width="300" height="800" alt="Music"></div>
+        <div><img src="m4.jpg" width="300" height="800" alt="Performances"></div>
     </div>
     
-<p1 style="color:yellow; background-color:red;"><i>hiiiiii how are you</i></p1>
-    <button onclick="location.href='index2.html'"type="button">
-    second page</button>
-<h3 style="text-align:center">Welcome</h3>
-<img src=objekt.jpg
-  width="500" height="300">
+    <p class="custom-text">hiiiiii how are you</p>
+    <button onclick="location.href='index2.html'" type="button">second page</button>
+    <h3 style="text-align:center">Welcome</h3>
+    <img src="objekt.jpg" width="500" height="300" alt="Object">
     
-<p1 style="border: 5px dotted red; text-align:right;"><u>Goodbye</u></p1>
-    </div>
-<footer style="background-color: #003049;
-color:white;">
-    <div id="Hellooooooo">Go up</div>
-<p>Author: Artsiom Pahadayeu</p>
-<p>s35554</p>
+    <p class="footer-text"><u>Goodbye</u></p>
+</div>
+
+<footer style="background-color: #003049; color:white; padding: 20px; text-align: center;">
+    <div id="Hellooooooo"><a href="#" style="color: white; text-decoration: underline;">Go up</a></div>
+    <p>Author: Artsiom Pahadayeu</p>
+    <p>s35554</p>
 </footer>
+
 </body>
 </html>
