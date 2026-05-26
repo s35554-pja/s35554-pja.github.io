@@ -72,17 +72,21 @@
             display: block;
         }
         .container {
-            display: flex; 
+            display: grid; 
             justify-content: center; 
             flex-direction: row; 
             gap: 20px;
             flex-wrap: wrap;
             position: relative;
         }
+        .imgt {
+             grid-column: 1 / 2;
+           grid-row: 1 / 2;
+        }
        .h-imtext {
-           position: absolute;
-           bottom: 0;
-           left: 0;
+           grid-column: 1 / 2;
+           grid-row: 1 / 2;
+           
        } 
     
        
@@ -125,13 +129,13 @@
     <h1 style="color: #C1121F; text-align:center;">Get to know more about the most influential female pop singer ever</h1>
     <br>
     <div class="container">
-        <div><img src="m1.jpg" width="300" height="800" alt="Home"></div>
+        <div class="imgt"><img src="m1.jpg" width="300" height="800" alt="Home"></div>
         <h3 class="h-imtext"><b>Latest updates</b></h3>
         <p class="p-imtext">All the latest news on the main pop diva!</p>
     
-        <div><img src="m2.jpg" width="300" height="800" alt="Biography"></div>
-        <div><img src="m3.jpeg" width="300" height="800" alt="Music"></div>
-        <div><img src="m4.jpg" width="300" height="800" alt="Performances"></div>
+        <div class="imgt">><img src="m2.jpg" width="300" height="800" alt="Biography"></div>
+        <div class="imgt">><img src="m3.jpeg" width="300" height="800" alt="Music"></div>
+        <div class="imgt">><img src="m4.jpg" width="300" height="800" alt="Performances"></div>
     </div>
     
     
