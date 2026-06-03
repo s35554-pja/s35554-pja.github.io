@@ -74,40 +74,48 @@
             object-fit: cover;
             display: block;
         }
-        /* --- New 3x3 Album Grid Styles --- */
+        /* --- Updated Simple 3x2 Album Grid --- */
         .album-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-            grid-template-rows: repeat(3, 300px);   /* 3 rows, each 300px tall */
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-rows: repeat(2, 350px);   /* 2 rows, slightly taller for text spacing */
             gap: 25px;
             padding: 0 10px 40px 10px;
             max-width: 1200px;
-            margin: 0 auto; /* Centers the whole grid on the page */
+            margin: 0 auto;
         }
 
         .grid-square {
-            position: relative; /* Keeps absolute elements pinned inside this square */
-            background-color: #002133; /* Slightly lighter dark blue for contrast */
-            border: 2px solid #C1121F;   /* Theme red border */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Pushes all contents to the absolute bottom */
             padding: 20px;
             border-radius: 6px;
+            overflow: hidden;
+            /* Background image global settings */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            /* Soft gradient overlay so text remains readable over the images */
+            background-image: linear-gradient(to top, rgba(0, 48, 73, 0.9) 0%, rgba(0, 48, 73, 0.4) 60%, transparent 100%);
         }
-        .grid-square h3 {
-            position: absolute;
-            top: 15px;
-            left: 20px;
-            right: 20px;
-            margin: 0;
+
+        /* --- Individual Background Image Classes (Replace filename placeholders) --- */
+        .album-1 { background-image: linear-gradient(to top, rgba(0, 48, 73, 0.9), rgba(0, 48, 73, 0.2)), url('madonna_1983.jpg'); }
+        .album-2 { background-image: linear-gradient(to top, rgba(0, 48, 73, 0.9), rgba(0, 48, 73, 0.2)), url('like_a_virgin.jpg'); }
+        .album-3 { background-image: linear-gradient(to top, rgba(0, 48, 73, 0.9), rgba(0, 48, 73, 0.2)), url('true_blue.jpg'); }
+        .album-4 { background-image: linear-gradient(to top, rgba(0, 48, 73, 0.9), rgba(0, 48, 73, 0.2)), url('like_a_prayer.jpg'); }
+        .album-5 { background-image: linear-gradient(to top, rgba(0, 48, 73, 0.9), rgba(0, 48, 73, 0.2)), url('ray_of_light.jpg'); }
+        .album-6 { background-image: linear-gradient(to top, rgba(0, 48, 73, 0.9), rgba(0, 48, 73, 0.2)), url('confessions.jpg'); }
+ .grid-square h3 {
+            margin: 0 0 6px 0; /* Tiny bottom margin to rest cleanly on paragraph */
             color: #C1121F;
             font-size: 24px;
             text-align: center;
         }
 
         .grid-square p {
-            position: absolute;
-            bottom: 15px;
-            left: 20px;
-            right: 20px;
             margin: 0;
             color: white;
             font-size: 16px;
@@ -183,19 +191,7 @@
         <h3>Bedtime Stories (1994)</h3>
         <p>A smoother R&B-influenced sound featuring the chart-topping, hypnotic track "Take a Bow".</p>
     </div>
-         <!-- Row 3 -->
-    <div class="grid-square">
-        <h3>Ray of Light (1998)</h3>
-        <p>A brilliant electronic and techno transformation that won multiple Grammy Awards.</p>
-    </div>
-    <div class="grid-square">
-        <h3>Music (2000)</h3>
-        <p>Blending country music accents with electronic dance beats to create a unique pop flavor.</p>
-    </div>
-    <div class="grid-square">
-        <h3>Confessions on a Dance Floor (2005)</h3>
-        <p>A continuous non-stop club mix album that sampled ABBA and won a Grammy for Best Electronic Album.</p>
-    </div>
+      
 </div>
     
     <footer style="background-color: #003049; color:white; padding: 20px; text-align: center;">
