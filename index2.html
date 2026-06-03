@@ -9,14 +9,16 @@
             text-decoration: none;
             box-sizing: border-box;
         }
-        header {
-            position: relative;
-            background-color: #003049;
         body {
     font-family: Garamond, serif;
     margin: 0;
     padding: 0;
+    background-color: #003049;
 }
+        header {
+            position: relative;
+            background-color: #003049;
+        
         }
         .navbar {
             background-color: #003049; 
@@ -65,10 +67,12 @@
         .button1 a:hover {
             color: white;
         }
-        header video: {
-    width: 120%;
-    height: 40%;
-            place-items: center;
+        header video {
+    width: 100%;
+        height: auto;
+    max-height: 50vh;
+            object-fit: cover;
+            display: block;
         }
     </style>
 </head>
