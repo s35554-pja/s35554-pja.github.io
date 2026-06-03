@@ -74,6 +74,46 @@
             object-fit: cover;
             display: block;
         }
+        /* --- New 3x3 Album Grid Styles --- */
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            grid-template-rows: repeat(3, 300px);   /* 3 rows, each 300px tall */
+            gap: 25px;
+            padding: 0 10px 40px 10px;
+            max-width: 1200px;
+            margin: 0 auto; /* Centers the whole grid on the page */
+        }
+
+        .grid-square {
+            position: relative; /* Keeps absolute elements pinned inside this square */
+            background-color: #002133; /* Slightly lighter dark blue for contrast */
+            border: 2px solid #C1121F;   /* Theme red border */
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .grid-square h3 {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            right: 20px;
+            margin: 0;
+            color: #C1121F;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .grid-square p {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            right: 20px;
+            margin: 0;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            line-height: 1.4;
+        }
     </style>
 </head>
 
@@ -114,6 +154,49 @@
     <p style="color: #C1121F; text-align:center; font-size: 25px;">Do you know what song gave Madonna her career? Or do you know which of her albums had every song go numer 1 on Bilboard. Find that out and many new information about your favorite albums.</p>
 </div>
     <br>
+    
+    <div class="album-grid">
+    <!-- Row 1 -->
+    <div class="grid-square">
+        <h3>Madonna (1983)</h3>
+        <p>Her self-titled debut album featured breakthrough dance hits like "Holiday" and "Lucky Star".</p>
+    </div>
+    <div class="grid-square">
+        <h3>Like a Virgin (1984)</h3>
+        <p>The album that solidified her as a global superstar, topping the Billboard 200 charts.</p>
+    </div>
+    <div class="grid-square">
+        <h3>True Blue (1986)</h3>
+        <p>Dedicated to her then-husband Sean Penn, featuring "Papa Don't Preach" and "La Isla Bonita".</p>
+    </div>
+
+        <!-- Row 2 -->
+    <div class="grid-square">
+        <h3>Like a Prayer (1989)</h3>
+        <p>An acclaimed masterpiece dealing with religion and family, causing massive cultural waves.</p>
+    </div>
+    <div class="grid-square">
+        <h3>Erotica (1992)</h3>
+        <p>A bold, experimental concept album released alongside her controversial "Sex" coffee table book.</p>
+    </div>
+    <div class="grid-square">
+        <h3>Bedtime Stories (1994)</h3>
+        <p>A smoother R&B-influenced sound featuring the chart-topping, hypnotic track "Take a Bow".</p>
+    </div>
+         <!-- Row 3 -->
+    <div class="grid-square">
+        <h3>Ray of Light (1998)</h3>
+        <p>A brilliant electronic and techno transformation that won multiple Grammy Awards.</p>
+    </div>
+    <div class="grid-square">
+        <h3>Music (2000)</h3>
+        <p>Blending country music accents with electronic dance beats to create a unique pop flavor.</p>
+    </div>
+    <div class="grid-square">
+        <h3>Confessions on a Dance Floor (2005)</h3>
+        <p>A continuous non-stop club mix album that sampled ABBA and won a Grammy for Best Electronic Album.</p>
+    </div>
+</div>
     
     <footer style="background-color: #003049; color:white; padding: 20px; text-align: center;">
     <br>
