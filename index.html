@@ -16,6 +16,7 @@
     font-family: Garamond, serif;
     margin: 0;
     padding: 0;
+                background-color: #003049;
 }
         }
         .navbar {
@@ -71,16 +72,59 @@
             
             display: block;
         }
-        .container {
-            display: flex; 
-            justify-content: center; 
-            flex-direction: row; 
-            gap: 20px;
-            flex-wrap: wrap;
-        }
         
-    
-       
+        .grid-row {
+            display: grid; 
+            grid-template-columns: repeat(4, 300px); 
+            justify-content: center; 
+            gap: 20px;
+           background-color: #003049;
+        }
+
+        .image-card {
+            position: relative; 
+            width: 300px;
+            height: 800px;
+            overflow: hidden;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+        }
+
+        .overlay-text {
+            position: absolute;
+            bottom: 0;         
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px #003049;
+        }
+
+        .overlay-text h3 {
+            margin: 0 0 8px 0;
+            font-size: 24px;
+            color: #C1121F;
+        }
+
+        .overlay-text p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        .overlay-text a {
+            decoration: none;
+            color: white;
+            
+        }
+
+
     </style>
 </head>
 <body>
@@ -118,20 +162,53 @@
 
 <div style="padding: 20px 5%; background-color: #003049; font-family: Garamond, serif; color: white;">
     <h1 style="color: #C1121F; text-align:center;">Get to know more about the most influential female pop singer ever</h1>
-    <br>
-    <div class="container">
-        <div><img src="m1.jpg" width="300" height="800" alt="Home"></div>
-        <div><img src="m2.jpg" width="300" height="800" alt="Biography"></div>
-        <div><img src="m3.jpeg" width="300" height="800" alt="Music"></div>
-        <div><img src="m4.jpg" width="300" height="800" alt="Performances"></div>
-    </div>
-    
-    
- 
 </div>
+    <br>
+    <div class="grid-row">
+        <div class="image-card">
+            <img src="m1.jpg" alt="Home">
+            <div class="overlay-text">
+                <h3><b>Latest Updates</b></h3>
+                <p>All the latest news on the main pop diva!</p>
+                    <a href="index2.html"><u>Read more...</u></a>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="m2.jpg" alt="Biography">
+            <div class="overlay-text">
+                <h3><b>Biography</b></h3>
+                <p>Explore the life story of the Queen of Pop.</p>
+                    <a href="index2.html"><u>Read more...</u></a>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <img src="m3.jpeg" alt="Music">
+            <div class="overlay-text">
+                <h3><b>Music</b></h3>
+                <p>Discover iconic albums and chart-topping hits.</p>
+                <a href="index2.html"><u>Read more...</u></a>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <img src="m4.jpg" alt="Performances">
+            <div class="overlay-text">
+                <h3><b>Performances</b></h3>
+                <p>Relive legendary live tours and stage shows.</p>
+                    <a href="index2.html"><u>Read more...</u></a>
+            </div>
+        </div>
+    </div>
+
 
 <footer style="background-color: #003049; color:white; padding: 20px; text-align: center;">
-    <div id="Hellooooooo"><a href="#" style="color: white; text-decoration: underline;">Go up</a></div>
+    <div>
+        <br>
+          <hr style="height:2px; color:#white;>
+        <a href="#" style="color: white; border: 2px solid white;">GO UP</a>
+    </div>
     <p>Author: Artsiom Pahadayeu</p>
     <p>s35554</p>
 </footer>

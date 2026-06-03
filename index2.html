@@ -1,37 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<title>Page title</title>
-<meta name="description" content="Web tutorials">
-    <style>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <meta name="description" content="Web tutorials">
+    <style type="text/css">
+        * {
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        body {
+    font-family: Garamond, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #003049;
+}
+        header {
+            position: relative;
+            background-color: #003049;
+        
+        }
+        .navbar {
+            background-color: #003049; 
+            font-family: Garamond, serif; 
+            padding: 0 30px; 
+            width: 100%;
+        }
+        .navdiv {
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: space-evenly; 
+            padding: 20px 0;
+        }
+        .navel a {
+            font-family: Garamond, serif; 
+            font-size: 21px; 
+            color: white;
+            display: inline-block;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+        .navel a:hover {
+            color: #C1121F; 
+            transform: scale(1.19);
+        }
         .button1 {
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-allign: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    }
+            background-color: white; 
+            margin-left: 10px; 
+            padding: 10px; 
+            width: 100px; 
+            border: 0;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+        .button1 a {
+            font-family: Garamond, serif; 
+            font-weight: bold; 
+            color: #003049; 
+            font-size: 21px;
+             transition: color 0.2s ease;
+        }
         .button1:hover {
-            background-color:yellow;
-            color: red;
+            background-color: #C1121F; 
+            color: white; 
+            transform: scale(1.1);
+        }
+        .button1 a:hover {
+            color: white;
+        }
+        header video {
+    width: 100%;
+        height: auto;
+    max-height: 100vh;
+            object-fit: cover;
+            display: block;
         }
     </style>
 </head>
 
 <body>
-    <div style="padding-left: 5%; padding-right: 5%; background-color: #003049; font-family: Garamond;">
-<header title="Welcome": style="text-align:center; background-color: yellow;
-    color: red; font-weight: bold;">
-<h1 style="text-align:center"><b>New page!!!!</b></h1>
+
+<header>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="navel">
+                <a title="Main page" href="index.html">
+                    <img src="M_logo.svg" alt="logo" style="width:55px;height:55px;">
+                </a>
+            </div>
+            <div class="navel"><a href="index2.html">BIOGRAPHY</a></div>
+            <div class="navel"><a href="index2.html">MUSIC</a></div>
+            <div class="navel"><a href="index2.html">PERFORMANCES</a></div>
+            <div class="navel">
+                <a onclick="window.open('https://www.instagram.com/newrt_45/');" style="cursor: pointer;">
+                    <img src="ins.svg" alt="Instagram" style="width:30px;height:30px;">
+                </a>
+            </div>
+            <button class="button1" onclick="location.href='signin.html'"><a href="signin.html">SIGN IN</a></button>
+        </div>
+    </nav>
+    
+<video autoplay loop muted playsinline><source src="m_vid.mp4"></video>
+    <h1 style="position: absolute; top: 30%; left: 55%;
+        transform: translate(-30%, -30%); color:#C1121F; 
+        font-size: 110px; text-align:center;"><b>MADONNA'S DISCOGRAPHY</b></h1>
+    <h2 style="position: absolute; top: 60%; left: 55%;
+        transform: translate(-30%, -30%); color:#C1121F; 
+        font-size: 70px; text-align:center;">Star's most iconic albums</h2>
 </header>
-    <a title="Check out my instagam" href="https://www.instagram.com/newrt_45/">My instagram</a>
-<button onclick="location.href='index.html'"
-    class="button button1">MAIN PAGE</button>
-    </div>
+    
         
         
     
