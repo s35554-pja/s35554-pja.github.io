@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 20.97px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: GaramondPremrPro-Bd, 'Garamond Premier Pro';
+      }
+
+      .cls-2 {
+        font-size: 54.62px;
+      }
+
+      .cls-3 {
+        fill: #c12126;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" width="70" height="70"/>
+  <text class="cls-2" transform="translate(7.58 40.93)"><tspan x="0" y="0">28</tspan></text>
+  <text class="cls-1" transform="translate(9.11 61.55)"><tspan x="0" y="0">J</tspan><tspan class="cls-4" x="7.76" y="0">U</tspan><tspan x="23.53" y="0">NE</tspan></text>
+</svg>
