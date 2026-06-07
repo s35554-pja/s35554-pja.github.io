@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page title</title>
+    <title>performances</title>
     <meta name="description" content="Web tutorials">
     <style type="text/css">
         * {
@@ -76,10 +76,32 @@
              .container {
                  display: grid;
                  padding: 30px 10%;
-                 grid-template-columns: 70px auto;
-                 grid-template-columns: 70px 70px 70px 70px;
-                 border: 3px;
+                 grid-template-columns: 150px auto;
+                 grid-template-rows: 150px 150px 150px 150px;
+                 column-gap: 30px;
+                 row-gap: 50px;
              }
+        .date {
+            width: 150px;
+            height: 150px;
+        }
+        .info {
+            display: flex; 
+            flex-direction: row; 
+             justify-content: space-between; 
+            background-color: #C1121F;
+            color: white;
+            padding: 11px;
+            padding-top: 5px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 28px;
+        }
+        .info a{
+            text-decoration: underline;
+            padding-top: 50px;
+         
+        }
       </style>
 </head>
     <body>
@@ -96,7 +118,7 @@
             <div class="navel"><a href="index2.html">MUSIC</a></div>
             <div class="navel"><a href="perf.html">PERFORMANCES</a></div>
             <div class="navel">
-                <a onclick="window.open('https://www.instagram.com/newrt_45/');" style="cursor: pointer;">
+                <a onclick="window.open('https://www.instagram.com/newrt_45/');">
                     <img src="ins.svg" alt="Instagram" style="width:30px;height:30px;">
                 </a>
             </div>
@@ -119,11 +141,39 @@
 <div style="padding: 30px 10%; background-color: #003049; font-family: Garamond, serif;">
     <h1 style="color: #C1121F; text-align:center; font-size: 40px">Are you ready for the new "Confessiones II" tour?</h1>
     <br>
-    <p style="color: #C1121F; text-align:center; font-size: 25px;">Here you can find the dates and locations for all of the stop during Madonna's new tour</p>
+    <p style="color: #C1121F; text-align:center; font-size: 25px;">Here you can find the dates and locations for all of the stops during Madonna's new tour</p>
 </div>
     <br>
         <div class="container">
-            
+            <div class="date">
+                <img src="date-01.svg">
+            </div>
+            <div class="info">
+                <h1>WARSAW    —   PGE Narodowy</h1> 
+                <a onclick="window.open('https://en.wikipedia.org/wiki/List_of_Madonna_concerts');">Find tickets</a>
+               
+            </div>
+            <div class="date">
+                <img src="date-02.svg">
+            </div>
+             <div class="info">
+                <h1>BERLIN    —   Uber Arena</h1> 
+           <a onclick="window.open('https://en.wikipedia.org/wiki/List_of_Madonna_concerts');">Find tickets</a>
+            </div>
+            <div class="date">
+                <img src="date-03.svg">
+            </div>
+             <div class="info">
+                <h1>PRAGUE    —   O2 Arena</h1> 
+               <a onclick="window.open('https://en.wikipedia.org/wiki/List_of_Madonna_concerts');">Find tickets</a>
+            </div>
+            <div class="date">
+                <img src="date-04.svg">
+            </div>
+             <div class="info">
+                <h1>PARIS    —   Accor Arena</h1> 
+                <a onclick="window.open('https://en.wikipedia.org/wiki/List_of_Madonna_concerts');">Find tickets</a>
+            </div>
         </div>
         
       <footer style="background-color: #003049; color:white; padding: 20px; text-align: center;">
