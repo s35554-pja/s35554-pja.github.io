@@ -108,9 +108,23 @@
     <div>
         <p style="color: #C1121F; text-align:center; font-size: 25px; padding: 30px 10%;">Madonna Louise Ciccone is an American singer, songwriter, record producer, and actress. Dubbed the "Queen of Pop", she is known for her continual reinvention and versatility in music production, songwriting, and visual presentation. Her works explored social, political, sexual, and religious themes, generating both controversy and critical acclaim. Regarded as one of the most influential musicians of all time, Madonna has had a significant socio-cultural impact across her career and broke gender barriers in popular music.</p>
     </div>
-    <div style=" width: 101%; height: 40%; display: block; text-align: center;">
-        <img src="m5.jpg" alt="red madonna">
-    </div>
+    
+    <!-- SEKCJA PODSTRONY Z MAPĄ LINKÓW (<map> i <area>) -->
+<div class="map-container">
+    <h2 style="color: white; font-size: 2rem; margin-bottom: 0.5rem;">Interactive Showcase</h2>
+    <p style="color: #669BBC; margin-bottom: 1.5rem;">Click on the left side of the image to explore the Music, or the right side for Tour Performances.</p>
+    
+    <!-- Główne zdjęcie m5.jpg z przypisaną mapą -->
+    <img src="m5.jpg" usemap="#madonnamap" alt="red madonna">
+
+    <!-- Definicja mapy odsyłaczy (Podział na strefy klikalne) -->
+    <map name="madonnamap">
+        <!-- Lewa połowa obrazu (zakładając przybliżone współrzędne dla szerokości 1200px) przekierowuje do muzyki -->
+        <area shape="rect" coords="0,0,600,800" alt="Music Section" href="index2.html">
+        <!-- Prawa połowa obrazu przekierowuje do koncertów -->
+        <area shape="rect" coords="601,0,1200,800" alt="Performances Section" href="perf.html">
+    </map>
+</div>
     
 
 
