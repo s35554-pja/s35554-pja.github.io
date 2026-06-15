@@ -120,7 +120,7 @@ header {
 .overlay-text a:hover {
     color: #C1121F;
 }
-/* ANIMACJA POKLATKOWA (Pop-Art Retro Neon) */
+
 .svg-container {
     text-align: center;
     padding: 2rem;
@@ -129,7 +129,6 @@ header {
 
 .animated-star {
     transform-origin: center;
-    /* steps(4) wymusza skokową, poklatkową zmianę bez płynnych przejść */
     animation: flashSteps 1.5s steps(4) infinite;
 }
 
@@ -140,7 +139,7 @@ header {
     75% { fill: #003049; transform: scale(1.1); }
     100% { fill: #C1121F; transform: scale(1); }
 }
-/* MAPA OBRAZU - responsywny kontener */
+
 .map-container {
     text-align: center;
     padding: 2rem 1rem;
