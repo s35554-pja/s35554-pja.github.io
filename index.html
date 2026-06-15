@@ -39,18 +39,11 @@
         transform: translate(-30%, -30%); color:#C1121F; 
         font-size: 70px; text-align:center;">Page dedicated to the Queen of Pop</h2>
 </header>
-<!-- SEKCJA Z INLINE SVG (Min. 5 kształtów + Poklatkowa Animacja) -->
 <div class="svg-container">
-    
     <svg width="200" height="200" viewBox="0 0 200 200" style="margin: 0 auto; display: block;">
-        <!-- Kształt 1: Koło tła -->
         <circle cx="100" cy="100" r="90" fill="#003049" stroke="#C1121F" stroke-width="4"/>
-        <!-- Kształt 2: Elipsa podstawy korony -->
         <ellipse cx="100" cy="140" rx="45" ry="10" fill="#003049"/>
-        <!-- Kształt 3: Wielokąt (Główny korpus korony) -->
         <polygon points="55,140 40,80 80,110 100,60 120,110 160,80 145,140" fill="white" stroke="#C1121F" stroke-width="3"/>
-
-        <!-- Kształt 6: Animowana gwiazda poklatkowo (Wielokąt gwiazdy) -->
         <polygon class="animated-star" points="100,20 104,32 116,32 107,40 110,52 100,45 90,52 93,40 84,32 96,32" fill="#C1121F"/>
     </svg>
 </div>
@@ -102,19 +95,12 @@
     <div>
         <p style="color: #C1121F; text-align:center; font-size: 25px; padding: 30px 10%;">Madonna Louise Ciccone is an American singer, songwriter, record producer, and actress. Dubbed the "Queen of Pop", she is known for her continual reinvention and versatility in music production, songwriting, and visual presentation. Her works explored social, political, sexual, and religious themes, generating both controversy and critical acclaim. Regarded as one of the most influential musicians of all time, Madonna has had a significant socio-cultural impact across her career and broke gender barriers in popular music.</p>
     </div>
-    
-    <!-- SEKCJA PODSTRONY Z MAPĄ LINKÓW (<map> i <area>) -->
 <div class="map-container">
     <p style="color: #C1121F; margin-bottom: 1.5rem;">Click on the left side of the image to explore the Music, or the right side for Tour Performances.</p>
     
-    <!-- Główne zdjęcie m5.jpg z przypisaną mapą -->
     <img src="m5.jpg" usemap="#madonnamap" alt="red madonna">
-
-    <!-- Definicja mapy odsyłaczy (Podział na strefy klikalne) -->
     <map name="madonnamap">
-        <!-- Lewa połowa obrazu (zakładając przybliżone współrzędne dla szerokości 1200px) przekierowuje do muzyki -->
         <area shape="rect" coords="0,0,325,430" alt="Music Section" href="index2.html">
-        <!-- Prawa połowa obrazu przekierowuje do koncertów -->
         <area shape="rect" coords="325,0,650,430" alt="Performances Section" href="perf.html">
     </map>
 </div>
