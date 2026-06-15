@@ -99,7 +99,6 @@ header {
     box-sizing: border-box;
     text-align: center;
     color: white;
-    background: linear-gradient(to top, rgba(0, 48, 73, 0.95) 0%, rgba(0, 48, 73, 0.6) 60%, transparent 100%);
 }
 
 .overlay-text h3 {
@@ -174,10 +173,9 @@ header {
     background-color: #C1121F; 
     color: white;
 }
-/* MEDIA QUERIES - Dostosowanie do urządzeń mobilnych */
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Zmniejszenie bazowego fontu automatycznie przeskaluje rem */
+        font-size: 14px; 
     }
 
     .navdiv {
@@ -186,7 +184,7 @@ header {
     }
 
     header h1 {
-        font-size: 12vw !important; /* Dynamiczny rozmiar czcionki zależny od szerokości ekranu */
+        font-size: 12vw !important; 
         top: 25% !important;
     }
     header h2 {
@@ -194,7 +192,7 @@ header {
         top: 55% !important;
     }
     .grid-row {
-        grid-template-columns: 1fr; /* Jeden kafelek pod drugim na telefonie */
+        grid-template-columns: 1fr; 
         padding: 0 1.5rem;
     }
 
